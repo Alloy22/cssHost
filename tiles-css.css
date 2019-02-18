@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', wf_segoe-ui_normal, helvetica, arial, sans-serif;
+    color: #666;
+    background-color: #eaeaea;
+    font-size: 16px;
+    height: 100%;
+    width: 100%;
+  }
+
+#azure{
+ position: absolute;
+ height: 40px;
+ top: 130px;
+ left: 210px;
+}
+
+  .galleryItem {
+    float: left;
+    overflow: hidden;
+    height: 164px;
+    width: 244px;
+    margin: 0;
+    padding: 0 4px 4px 0;
+    background-color: #fff;
+    border: 1px solid transparent;
+  }
+
+  .galleryTileContainer {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    padding: 0 2px 2px 0;
+    border: none;
+    text-decoration: none;
+  }
+
+  .galleryTileContainer.focused-within .galleryBackground,
+  .galleryTileContainer:hover .galleryBackground {
+    transform: scale(.8);
+  }
+
+  .galleryTileContainer.focused-within .appActions,
+  .galleryTileContainer.focused-within .titleAndIndicator,
+  .galleryTileContainer:hover .appActions,
+  .galleryTileContainer:hover .titleAndIndicator {
+    transform: translateY(-25px);
+  }
+
+  .galleryTileContainer.focused-within .appActions,
+  .galleryTileContainer:hover .appActions {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .5s linear, left .5s linear, transform .5s
+  }
+
+  .galleryTileContainer.focused-within .appActions,
+  .galleryTileContainer.focused-within .galleryBackground,
+  .galleryTileContainer.focused-within .titleAndIndicator {
+    transition-duration: 0s
+  }
+
+  .galleryBackground {
+    padding-top: 25px;
+    position: relative;
+    transition: transform .5s;
+    transform-origin: center top;
+    height: 90px;
+    width: 240px;
+  }
+
+  .app-logo {
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .app.logo .container {
+    width: 80px;
+    height: 125px;
+  }
+
+  .container {
+    height: 120px;
+    display: inline-block;
+    text-align: center;
+    line-height: 120px;
+  }
+
+  .imageLogo {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    vertical-align: top;
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .titleAndIndicator {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 5px;
+    transition: transform .5s;
+  }
+
+  .titleAndIndicator h1 {
+    font-family: 'Segoe UI', wf_segoe-ui_normal, helvetica, arial, sans-serif;
+    color: #676767;
+    font-size: 17px;
+    font-weight: 800;
+    margin: 0 20px;
+    cursor: pointer;
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .titleAndIndicator h2 {
+    font-family: wf_standard-font, helvetica, arial, sans-serif;
+    color: #666;
+    font-size: 12px;
+    font-weight: 400;
+
+    margin: 5px 5px 5px 5px;
+    cursor: pointer;
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .appActions {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s .5s, width 0s .5s, height 0s .5s, opacity .5s linear, left .5s linear, transform .5s;
+    transition: opacity .5s, transform .5s;
+    transform: translateY(0);
+    display: block;
+  }
+
+  .appActions header {
+    font-family: wf_standard-font, helvetica, arial, sans-serif;
+    color: #666;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 6px 5px;
+    text-align: center;
+  }
+
+  .trimmedTextWithEllipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+.corner-ribbon{
+  width: 100px;
+  background: #e43;
+  position: relative;
+  top: 12.5px;
+  right: -175px;
+  left: auto;
+  text-align: center;
+  line-height: 25px;
+  letter-spacing: 1px;
+  color: #f0f0f0;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
